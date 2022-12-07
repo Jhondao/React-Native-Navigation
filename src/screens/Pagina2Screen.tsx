@@ -9,7 +9,7 @@ export const Pagina2Screen = () => {
   
   return (
     <View style={ styles.globalMargin }>
-        <Text> PaginaScreen  </Text>
+        <Text style={styles.title}> PaginaScreen  </Text>
 
         <Button 
           title='Ir página tres'

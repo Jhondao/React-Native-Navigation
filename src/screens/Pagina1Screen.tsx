@@ -11,7 +11,7 @@ interface Props extends StackScreenProps<any, any>{};
 export const Pagina1Screen = ({ navigation }: Props) => {
   return (
     <View style={ styles.globalMargin }>
-        <Text> PaginaScreen  </Text>
+        <Text style={styles.title}> PaginaScreen  </Text>
         <Button
           title='Ir página 2'
           onPress={() => navigation.navigate('Pagina2Screen')}
