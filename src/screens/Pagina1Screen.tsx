@@ -1,12 +1,11 @@
 import React from 'react'
 import { Button, Text, View, TouchableOpacity } from 'react-native';
-import { StackScreenProps } from '@react-navigation/stack';
 import { styles } from '../theme/appTheme';
-import { PersonaScreen } from './PersonaScreen';
+import { DrawerScreenProps } from '@react-navigation/drawer';
 
 
 
-interface Props extends StackScreenProps<any, any>{};
+interface Props extends DrawerScreenProps<any, any>{};
 
 
 export const Pagina1Screen = ({ navigation }: Props) => {
@@ -17,11 +16,6 @@ export const Pagina1Screen = ({ navigation }: Props) => {
           title='Ir página 2'
           onPress={() => navigation.navigate('Pagina2Screen')}
         />
-
-        {/* <Button 
-          title='Ir persona'
-          onPress={() => navigation.navigate('PersonaScreen') }
-        /> */}
 
         <Text>Navegar con argumentos</Text>
 
