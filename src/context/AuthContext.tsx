@@ -33,10 +33,15 @@ export const AuthProvider = ({ children }: any) => {
 
     const [authState, dispatch] = useReducer(authReducer, authInitialState)
 
+
+    const sigIng = () =>{
+        dispatch({type:'sigIn'})
+    }
+
     return(
         <AuthContext.Provider value={{
             authState,
-            signIn: () => {}
+            signIn: sigIng
         }}>
             { children }
         </AuthContext.Provider>
