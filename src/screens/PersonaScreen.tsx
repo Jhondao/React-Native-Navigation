@@ -31,6 +31,7 @@ export const PersonaScreen = ( { route, navigation }:Props ) => {
       changeUserName(params.nombre)
     }, [])
 
+    
     return (
     <View style={styles.globalMargin}>
         <Text style={styles.title}> 
