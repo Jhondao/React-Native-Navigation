@@ -1,8 +1,9 @@
 import React, { useContext } from 'react'
 import { View, Text, SafeAreaView } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { styles } from '../theme/appTheme';
+import { styles, colores } from '../theme/appTheme';
 import { AuthContext } from '../context/AuthContext';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 export const SettingsScreen = () => {
 
@@ -14,6 +15,12 @@ export const SettingsScreen = () => {
     <View style={{...styles.globalMargin, marginTop: insets.top + 20}}>
         <Text style={styles.title}>SettingsScreen</Text>
         <Text> {JSON.stringify(authState, null, 4)} </Text>
+
+        {
+          authState.favoriteIcon&&(
+            <Icon name={authState.favoriteIcon} size={150} color={colores.primary} />
+          )
+        }
     </View>
   )
 }
