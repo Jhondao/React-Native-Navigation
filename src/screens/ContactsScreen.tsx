@@ -14,10 +14,7 @@ export const ContactsScreen = () => {
 
         {
           !authState.isLoggedIn && <Button title="SignIn" onPress={signIn} />
-        }
-
-
-        
+        }   
     </View>
 )
 }
