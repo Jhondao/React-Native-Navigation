@@ -30,7 +30,6 @@ export const PersonaScreen = ( { route, navigation }:Props ) => {
     useEffect(() => {
       changeUserName(params.nombre)
     }, [])
-    
 
     return (
     <View style={styles.globalMargin}>
